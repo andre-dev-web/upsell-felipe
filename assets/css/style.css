@@ -1,0 +1,134 @@
+/* Colors */
+:root {
+  --color-default: #ecf4ff;
+  --color-primary: #FF6C00;
+  scroll-behavior: smooth;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 1rem;
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--color-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C45300;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-default);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C45300;
+  text-decoration: none;
+}
+section{
+  padding: 60px 0;
+}
+
+/*--------------------------------------------------------------
+# Slides
+--------------------------------------------------------------*/
+.main-text{
+  background-color:#000;
+  color: var(--color-default);
+}
+
+.main-text .color{
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Slides
+--------------------------------------------------------------*/
+#tranding{
+  background-color: #000;
+}
+
+#tranding .container {
+  margin: 0 auto;
+}
+
+.tranding-slide .tranding-slide-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin: 50px auto;
+  width: 300px;
+  height: 533.33px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.tranding-slider-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yes-btn, .no-btn{
+  border-radius: 20px;
+  padding: 15px;
+  margin: 5px;
+  font-weight: 600;
+  color: var(--color-default);
+  transition: all ease-in-out .5s;
+}
+
+.yes-btn:hover, .no-btn:hover{
+  transform: scale(1.1);
+}
+.yes-btn{
+  font-size: xx-large;
+  background-color: green;
+  border: green;
+}
+
+.no-btn{
+  background-color: red;
+  border: red;
+}
