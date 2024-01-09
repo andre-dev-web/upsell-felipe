@@ -46,6 +46,9 @@ section{
   padding: 60px 0;
 }
 
+#tranding, #pricing, #hero{
+  background-color: #000;
+}
 /*--------------------------------------------------------------
 # Slides
 --------------------------------------------------------------*/
@@ -61,9 +64,6 @@ section{
 /*--------------------------------------------------------------
 # Slides
 --------------------------------------------------------------*/
-#tranding{
-  background-color: #000;
-}
 
 #tranding .container {
   margin: 0 auto;
@@ -131,4 +131,14 @@ section{
 .no-btn{
   background-color: red;
   border: red;
+}
+
+@media (max-width:770px) {
+  .yes-btn{
+    font-size: medium;
+  }
+
+  .no-btn{
+    font-size:small
+  }
 }
